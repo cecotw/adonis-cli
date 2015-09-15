@@ -35,11 +35,22 @@ cli.clone(projectPath, function (err,repo) {
     lineup.progress.stop()
     if(err){
       return lineup.log.error(err)
-    }else{
-      lineup.sticker.note("Installed successfully , run below commands");
-      lineup.sticker.note(`cd ${command[1]}`);
-      lineup.sticker.note(`iojs ace server:start`);
-      lineup.sticker.show({align:'left'})
+    }
+    else{
+
+      cli.removeGit(projectPath, function (err) {
+
+        if(err){
+          return lineup.log.error(err)
+        }
+
+        lineup.sticker.note("Installed successfully , run below commands");
+        lineup.sticker.note(`cd ${command[1]}`);
+        lineup.sticker.note(`iojs ace server:start`);
+        lineup.sticker.show({align:'left'})
+
+
+      })
     }
   })
 

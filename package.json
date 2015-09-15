@@ -12,10 +12,11 @@
     "gift": "^0.6.1",
     "lineup": "0.0.7",
     "minimist": "^1.2.0",
-    "npm": "^2.14.1"
+    "npm": "^2.14.1",
+    "remove": "^0.1.5"
   },
   "preferGlobal": true,
   "bin": {
-    "adonis" : "index.js"
+    "adonis": "index.js"
   }
 }
