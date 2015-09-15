@@ -1,7 +1,7 @@
 {
   "name": "adonis-cli",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Create a new adonis app using this cli module , simply say adonis new <projectPath>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
