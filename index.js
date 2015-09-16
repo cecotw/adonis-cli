@@ -46,7 +46,7 @@ cli.clone(projectPath, function (err,repo) {
 
         lineup.sticker.note("Installed successfully , run below commands");
         lineup.sticker.note(`cd ${command[1]}`);
-        lineup.sticker.note(`iojs ace server:start`);
+        lineup.sticker.note(`node ace server:start`);
         lineup.sticker.show({align:'left'})
 
 
