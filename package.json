@@ -1,6 +1,6 @@
 {
   "name": "adonis-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create a new adonis app using this cli module , simply say adonis new <projectPath>",
   "main": "index.js",
   "scripts": {
