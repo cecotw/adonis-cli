@@ -17,7 +17,7 @@ if(!command[1]){
   return lineup.log.warn('Specify project name')
 }
 
-const projectPath = path.join(process.cwd(),command[1])
+const projectPath = '"' + path.join(process.cwd(),command[1]) + '"';
 
 lineup.progress.start('setting up project files ....')
 
